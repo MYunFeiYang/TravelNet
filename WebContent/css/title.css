@@ -1,0 +1,70 @@
+/* @charset "utf-8";; */
+
+#title {
+	font-size: 36px;
+	animation: change 3s linear0sinfinite;
+	font-weight: bold;
+	color:#804040;
+	width: 80%;
+	height: 50px;
+	line-height: 50px;
+	margin: 10px 10%;
+	box-shadow: 5px 5px 5px #999999;
+	border: 1px solid #666;
+}
+
+@
+keyframeschange { 0%{
+	color: #333;
+}
+25%{
+color
+
+
+:
+
+
+#ff0
+
+
+;
+}
+50%{
+color
+
+
+:
+
+
+#f60
+
+
+;
+}
+75%{
+color
+
+
+:
+
+
+#cf0
+
+
+;
+}
+100%{
+color
+
+
+:
+
+
+#f00
+
+
+;
+}
+}
+}
+/*CSSDocument*/

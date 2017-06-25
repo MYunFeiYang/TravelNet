@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>认证信息</title>
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap-theme.css">
+</head>
+<style type="text/css">
+.container {
+	width: 40%;
+	margin-top: 50px;
+}
+</style>
+<body>
+	<!--导航栏-->
+	<ul class="nav nav-tabs">
+		<li role="presentation" class="dropdown"><a
+			class="dropdown-toggle" data-toggle="dropdown" href="#" role="input"
+			aria-haspopup="true" aria-expanded="false"> 首页 <span
+				class="caret"></span>
+		</a>
+			<ul class="dropdown-menu">
+				<li><a href="index.jsp">首页</a></li>
+				<li><a href="map.html">行程</a></li>
+			</ul></li>
+		<li role="presentation" class="dropdown"><a
+			class="dropdown-toggle" data-toggle="dropdown" href="#" role="input"
+			aria-haspopup="true" aria-expanded="false"> 个人中心 <span
+				class="caret"></span>
+		</a>
+			<ul class="dropdown-menu">
+				<li><a href="chat.jsp">联系客服</a></li>
+				<li><a href="video.html">我的视频</a></li>
+				<li><a href="audio.html">我的音乐</a></li>
+				<li><a href="identification.html">我的认证信息</a></li>
+			</ul></li>
+		<li role="presentation" class="dropdown"><a
+			class="dropdown-toggle" data-toggle="dropdown" href="#" role="input"
+			aria-haspopup="true" aria-expanded="false"> 用户交流 <span
+				class="caret"></span>
+		</a>
+			<ul class="dropdown-menu">
+				<li><a href="comnication.jsp">用户交流</a></li>
+			</ul></li>
+		<li role="presentation" class="dropdown" style="float: right"><a
+			class="dropdown-toggle" data-toggle="dropdown" href="#" role="input"
+			aria-haspopup="true" aria-expanded="false"> 注册 <span
+				class="caret"></span>
+		</a>
+			<ul class="dropdown-menu">
+				<li><a href="register.jsp">注册</a></li>
+			</ul></li>
+	</ul>
+	<!-- 我的认证信息 -->
+	<form>
+		<div class="container">
+			<label for="basic-url">我的认证信息</label>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">@</span> <input
+					type="text" class="form-control" placeholder="用户名"
+					aria-describedby="basic-addon1">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">@</span> <input
+					type="text" class="form-control" placeholder="密码"
+					aria-describedby="basic-addon2">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">@</span> <input
+					type="text" class="form-control"
+					aria-label="Amount (to the nearest dollar)" placeholder="真实姓名">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">@</span> <input
+					type="text" class="form-control" id="basic-url"
+					aria-describedby="basic-addon3" placeholder="身份证号">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">@</span> <input
+					type="text" class="form-control" placeholder="常用QQ"
+					aria-describedby="basic-addon1">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">@</span> <input
+					type="text" class="form-control" placeholder="telephone"
+					aria-describedby="basic-addon2">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">@</span> <input
+					type="text" class="form-control" id="basic-url"
+					aria-describedby="basic-addon3" placeholder="e-mail">
+			</div>
+			<label for="basic-url">地址</label> <select name="">
+				<option value="北京">北京</option>
+				<option value="上海">上海</option>
+				<option value="天津">天津</option>
+				<option value="重庆">重庆</option>
+				<option value="江苏">江苏</option>
+				<option value="湖北" selected="selected">湖北</option>
+				<option value="湖南">湖南</option>
+				<option value="江西">江西</option>
+				<option value="四川">四川</option>
+				<option value="安徽">安徽</option>
+				<option value="河北">河北</option>
+				<option value="河南">河南</option>
+			</select> <select name="">
+				<option value="武汉市" selected="selected">武汉市</option>
+				<option value="孝感市">黄石市</option>
+				<option value="荆州市">荆州市</option>
+				<option value="黄冈市">黄冈市</option>
+				<option value="天门市">天门市</option>
+				<option value="恩施">恩施</option>
+				<option value="宜昌市">宜昌市</option>
+				<option value="黄石市">黄石市</option>
+				<option value="咸宁市">咸宁市</option>
+				<option value="襄樊市">襄樊市</option>
+				<option value="随州市">随州市</option>
+				<option value="鄂州市">鄂州市</option>
+			</select> <select name="">
+				<option value="江岸区">江岸区</option>
+				<option value="江汉区">江汉区</option>
+				<option value="硚口区">洪山区</option>
+				<option value="武昌区">武昌区</option>
+				<option value="蔡甸区">蔡甸区</option>
+				<option value="江夏区" selected="selected">江夏区</option>
+				<option value="东西湖区">东西湖区</option>
+				<option value="黄陂区">黄陂区</option>
+				<option value="新洲区">新洲区</option>
+				<option value="汉南区">汉南区</option>
+				<option value="青山区">青山区</option>
+				<option value="硚口区">硚口区</option>
+			</select>
+
+			<div class="btn-group" role="group" aria-label="...">
+				<input type="submit" class="btn btn-default" value="保存"> <input
+					type="reset" class="btn btn-default" value="取消">
+			</div>
+		</div>
+	</form>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="bootstrap/js/npm.js"></script>
+</body>
+</html>

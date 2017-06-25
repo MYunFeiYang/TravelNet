@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+body {
+	background-image: url(../images/background3.jpg);
+}
+#background{
+	width:60%;
+	height:auto;
+	margin:10px 20%;
+}
+#background ul{
+	width:100%;
+	height:auto;
+}
+#background ul li{
+	width:28%;
+	height:200px;
+	margin:30px 2%;
+	float:left;
+}
+#background ul li img{
+	width:100%;
+	heigth:100%;
+}

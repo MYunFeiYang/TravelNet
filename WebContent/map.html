@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>背包客</title>
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap-theme.css">
+<!--引用百度地图API-->
+<script type="text/javascript"
+	src="http://api.map.baidu.com/api?v=2.0&ak=tcAcgmpbQwTPQ94ZYyxmfO8reamhBIEV"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<style type="text/css">
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 42%;
+	height: 450px;
+	float: left;
+	margin: 4%;
+}
+.btn{
+margin:2% 4%;
+}
+</style>
+</head>
+<body>
+	<!--导航栏-->
+	<ul class="nav nav-tabs">
+
+		<li role="presentation" class="dropdown"><a
+			class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+			aria-haspopup="true" aria-expanded="false"> 首页 <span
+				class="caret"></span>
+		</a>
+			<ul class="dropdown-menu">
+				<li><a href="index.jsp">首页</a></li>
+				<li><a href="map.html">行程</a></li>
+			</ul></li>
+		<li role="presentation" class="dropdown"><a
+			class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+			aria-haspopup="true" aria-expanded="false"> 个人中心 <span
+				class="caret"></span>
+		</a>
+			<ul class="dropdown-menu">
+				<li><a href="chat.jsp">联系客服</a></li>
+				<li><a href="video.html">我的视频</a></li>
+				<li><a href="audio.html">我的音乐</a></li>
+				<li><a href="identification.html">我的认证信息</a></li>
+			</ul></li>
+		<li role="presentation" class="dropdown"><a
+			class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+			aria-haspopup="true" aria-expanded="false"> 关于我们 <span
+				class="caret"></span>
+		</a>
+			<ul class="dropdown-menu">
+				<li><a href="index.jsp">首页</a></li>
+				<li><a href="map.html">行程</a></li>
+			</ul></li>
+		<li role="presentation" class="dropdown"><a
+			class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+			aria-haspopup="true" aria-expanded="false"> 用户交流 <span
+				class="caret"></span>
+		</a>
+			<ul class="dropdown-menu">
+				<li><a href="comnication.jsp">用户交流</a></li>
+			</ul></li>		
+		<li role="presentation" class="dropdown" style="float: right"><a
+			class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+			aria-haspopup="true" aria-expanded="false"> 注册 <span
+				class="caret"></span>
+		</a>
+			<ul class="dropdown-menu">
+				<li><a href="register.jsp">注册</a></li>
+			</ul></li>
+	</ul>
+	<!-- 行程设计 -->
+	<div class="container">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 btn btn-default">湖北</div>
+			<div class="col-md-2 btn btn-default">北京</div>
+			<div class="col-md-2 btn btn-default">天津</div>
+			<div class="col-md-2 btn btn-default">上海</div>
+			<div class="col-md-2 btn btn-default">重庆</div>
+			<div class="col-md-2 btn btn-default">湖南</div>
+			<div class="col-md-2 btn btn-default">安徽</div>
+			<div class="col-md-2 btn btn-default">四川</div>
+			<div class="col-md-2 btn btn-default">江西</div>
+			<div class="col-md-2 btn btn-default">江苏</div>
+			<div class="col-md-2 btn btn-default">山东</div>
+			<div class="col-md-2 btn btn-default">青海</div>
+			<div class="col-md-2 btn btn-default">西藏</div>
+			<div class="col-md-2 btn btn-default">新疆</div>
+			<div class="col-md-2 btn btn-default">吉林</div>
+			<div class="col-md-2 btn btn-default">黑龙江</div>
+			<div class="col-md-2 btn btn-default">海南</div>
+			<div class="col-md-2 btn btn-default">云南</div>
+			<div class="col-md-2 btn btn-default">贵州</div>
+			<div class="col-md-2 btn btn-default">广东</div>
+			<div class="col-md-2 btn btn-default">广西</div>
+			<div class="col-md-2 btn btn-default">河南</div>
+			<div class="col-md-2 btn btn-default">河北</div>
+			<div class="col-md-2 btn btn-default">甘肃</div>
+			<div class="col-md-2 btn btn-default">陕西</div>
+			<div class="col-md-2 btn btn-default">山西</div>
+			<div class="col-md-2 btn btn-default">内蒙</div>
+			<div class="col-md-2 btn btn-default">浙江</div>
+			<div class="col-md-2 btn btn-default">宁夏</div>
+			<div class="col-md-2 btn btn-default">香港</div>
+			<div class="col-md-2 btn btn-default">澳门</div>
+			<div class="col-md-2 btn btn-default">福建</div>
+			<div class="col-md-2 btn btn-default">辽宁</div>
+			<div class="col-md-2 btn btn-default">台湾</div>
+		</div>
+	</div>
+	</div>
+	<!--百度地图容器-->
+	<div class="container" id="dituContent"></div>
+	<!-- 设置页脚 -->
+	<div id="footer" class="container">
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+			<div class="navbar-inner navbar-content-center">
+				<p class="text-muted credit"
+					style="text-align: center; height: 20px; line-height: 20px">
+					 <a href="http://map.baidu.com/">更多规划</a>.<br>
+				</p>
+
+			</div>
+		</nav>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="bootstrap/js/npm.js"></script>
+</body>
+<script type="text/javascript">
+	//创建和初始化地图函数：
+	function initMap() {
+		createMap();//创建地图
+		setMapEvent();//设置地图事件
+		addMapControl();//向地图添加控件
+	}
+	//创建地图函数：
+	function createMap() {
+		var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+		var point = new BMap.Point(114.311831, 30.598428);//定义一个中心点坐标
+		map.centerAndZoom(point, 12);//设定地图的中心点和坐标并将地图显示在地图容器中
+		window.map = map;//将map变量存储在全局
+	}
+	//地图事件设置函数：
+	function setMapEvent() {
+		map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+		map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+		map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+		map.enableKeyboard();//启用键盘上下左右键移动地图
+	}
+	//地图控件添加函数：
+	function addMapControl() {
+		//向地图中添加缩放控件
+		var ctrl_nav = new BMap.NavigationControl({
+			anchor : BMAP_ANCHOR_TOP_LEFT,
+			type : BMAP_NAVIGATION_CONTROL_LARGE
+		});
+		map.addControl(ctrl_nav);
+		//向地图中添加缩略图控件
+		var ctrl_ove = new BMap.OverviewMapControl({
+			anchor : BMAP_ANCHOR_BOTTOM_RIGHT,
+			isOpen : 1
+		});
+		map.addControl(ctrl_ove);
+		//向地图中添加比例尺控件
+		var ctrl_sca = new BMap.ScaleControl({
+			anchor : BMAP_ANCHOR_BOTTOM_LEFT
+		});
+		map.addControl(ctrl_sca);
+	}
+	initMap();//创建和初始化地图
+	window.onload = init;
+</script>
+</html>

@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+a:link /{
+	color: #006
+} /*是超级链接的初始状态*/
+a:hover {
+	color: #06F
+} /*是把鼠标放上去时悬停的状况*/
+a:active {
+	color: #F00
+} /*是鼠标点击时*/
+a:visited {
+	
+} /*是访问过后的情况*/ /* CSS Document */
+#publicresource {
+	width: 80%;
+	height: auto;
+	margin: 10px auto;
+	display: none;
+}
